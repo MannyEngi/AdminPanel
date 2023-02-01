@@ -1,6 +1,11 @@
 .home {
-    background-color: #11928d;
+    display: flex;
+    // background-color: #11928d;
     .title {
         color: white;
+    }
+    .homeContainer{
+        
+        flex: 6;
     }
 }
