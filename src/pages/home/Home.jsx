@@ -12,7 +12,7 @@ const Home = () => {
         <Sidebar/>
         <div className='homeContainer'>
           <Navbar/>
-          <div className="widget">
+          <div className="widgets">
             <Widget type="user"/>
             <Widget type="estimates"/>
             <Widget type="earning"/>
@@ -20,9 +20,16 @@ const Home = () => {
           </div>
           <div className="charts">
             <Featured/>
-            {/* <Chart/> */}
+            <Chart/>
 
           </div>
+          <div className="listContainer">
+            <div className="listTitle">
+              Latest Transactions
+            </div>
+
+          </div>
+
         </div>
     </div>
   );
