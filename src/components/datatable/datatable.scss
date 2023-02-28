@@ -14,4 +14,47 @@
             margin-right: 20px;
         }
     }
+
+    .cellWithStatus{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.Active{
+            color: green;
+            background-color: rgba(0, 128, 0, 0.151);
+        }
+    
+        &.Pending{
+            color: goldenrod;
+            background-color: rgba(189, 189, 3, 0.103);
+        }
+    
+        &.Passive{
+            color: crimson;
+            background-color: rgba(255, 0, 0, 0.05);
+        }
+    }
+
+    .cellAction{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .viewButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: darkblue;
+            border: 1px dotted darkblue;
+            cursor: pointer;
+        }
+
+        .deleteButton{
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: crimson;
+            background-color: rgba(255, 0, 0, 0.05);
+            cursor: pointer;
+        }
+
+    }
 }
